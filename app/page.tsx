@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Footer from "./ui/Footer";
 
 const ModelViewer = dynamic(() => import("./components/ModelViewer"), {
   ssr: false,
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className="h-screen w-full overflow-hidden">
       <ModelViewer />
+      <Footer />
     </main>
   );
 }
